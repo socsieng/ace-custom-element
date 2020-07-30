@@ -33,6 +33,9 @@ class AceEditor extends HTMLElement {
   @NotifyBooleanAttribute()
   wrap?: boolean;
 
+  @NotifyBooleanAttribute()
+  hideGutter?: boolean;
+
   @Notify()
   basePath?: string;
 
@@ -83,6 +86,8 @@ class AceEditor extends HTMLElement {
     editor.setHighlightActiveLine(!this.readonly);
     editor.setHighlightGutterLine(!this.readonly);
 
+    editor.renderer.setShowGutter(!this.hideGutter);
+
     editor.getSession().setUseWrapMode(!!this.wrap);
 
     editor.off('change', this.handleChange);
@@ -95,13 +100,14 @@ class AceEditor extends HTMLElement {
 
   private appendStyles() {
     const rootNode = this.getRootNode() as Document | ShadowRoot | undefined;
-    const styleId = `ace-custom-element-style`;
+    const aceStyleId = `ace_editor.css`;
+    const customStyleId = `ace-custom-element-style`;
 
     // initialize styles if rendering on the client:
     if (rootNode) {
-      if (!rootNode.getElementById?.(styleId)) {
+      if (!rootNode.getElementById?.(customStyleId)) {
         const style = document.createElement('style');
-        style.id = styleId;
+        style.id = customStyleId;
         style.type = 'text/css';
         style.innerHTML = `
         ace-editor {
@@ -115,6 +121,17 @@ class AceEditor extends HTMLElement {
           rootNode.head.appendChild(style);
         } else {
           rootNode.appendChild(style);
+        }
+      }
+
+      if (!rootNode.getElementById?.(aceStyleId)) {
+        const editorStyle = document.getElementById(aceStyleId);
+        if (editorStyle) {
+          if (rootNode instanceof Document && rootNode.head) {
+            rootNode.head.appendChild(editorStyle.cloneNode(true));
+          } else {
+            rootNode.appendChild(editorStyle.cloneNode(true));
+          }
         }
       }
     }
