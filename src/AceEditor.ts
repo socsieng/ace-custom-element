@@ -148,10 +148,10 @@ class AceEditor extends HTMLElement {
   }
 
   connectedCallback(): void {
-    this.initializeEditor();
-
-    this.dispatch('ready', {
-      editor: this.editor,
+    this.initializeEditor().then(() => {
+      this.dispatch('ready', {
+        editor: this.editor,
+      });
     });
   }
 
