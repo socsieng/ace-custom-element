@@ -27,6 +27,8 @@ Using a CDN like unpkg.com:
 <ace-editor theme="ace/theme/monokai" value="console.log('hello world');"></ace-editor>
 ```
 
+Try it out on [JSFiddle](https://jsfiddle.net/4ejdon81/).
+
 ## Supported properties
 
 - `editor`:
