@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.1.1](https://www.github.com/socsieng/ace-custom-element/compare/v1.1.0...v1.1.1) (2020-07-30)
+
+
+### Bug Fixes
+
+* flatten event details for change event ([c5bdb43](https://www.github.com/socsieng/ace-custom-element/commit/c5bdb43e9600079ab6f9d015408001168c2f1921))
+
 ## [1.1.0](https://www.github.com/socsieng/ace-custom-element/compare/v1.0.2...v1.1.0) (2020-07-30)
 
 
