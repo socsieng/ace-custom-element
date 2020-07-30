@@ -1,6 +1,6 @@
 {
   "name": "ace-custom-element",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "description": "Custom element wrapper for the ace editor (https://ace.c9.io/)",
   "main": "dist/index.js",
   "scripts": {
