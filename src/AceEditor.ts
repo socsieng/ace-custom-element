@@ -10,7 +10,10 @@ import { debounce } from './lib/debounce';
 class AceEditor extends HTMLElement {
   private static _observedAttributes: string[] = [];
 
-  private editor?: Ace.Editor;
+  private _editor?: Ace.Editor;
+  get editor(): Ace.Editor | undefined {
+    return this._editor;
+  }
 
   @NotifyAttribute()
   value?: string;
@@ -95,7 +98,7 @@ class AceEditor extends HTMLElement {
 
     this.resize();
 
-    this.editor = editor;
+    this._editor = editor;
   });
 
   private appendStyles() {
@@ -139,12 +142,16 @@ class AceEditor extends HTMLElement {
 
   connectedCallback(): void {
     this.initializeEditor();
+
+    this.dispatch('ready', {
+      editor: this.editor,
+    });
   }
 
   disconnectedCallback(): void {
-    if (!this.editor) return;
+    if (!this._editor) return;
 
-    this.editor.off('change', this.handleChange);
+    this._editor.off('change', this.handleChange);
   }
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -158,11 +165,11 @@ class AceEditor extends HTMLElement {
   }
 
   resize(): void {
-    this.editor?.resize();
+    this._editor?.resize();
   }
 
   private handleChange = debounce(() => {
-    const text = this.editor?.getValue() || '';
+    const text = this._editor?.getValue() || '';
     if (text !== this.value) {
       if (text) {
         this.setAttribute('value', text);

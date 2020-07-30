@@ -29,6 +29,9 @@ Using a CDN like unpkg.com:
 
 ## Supported properties
 
+- `editor`:
+  - type: `Ace.Editor`
+  - description: A reference to the ace editor.
 - `value`:
   - type: `string`
   - attribute: `value`
@@ -71,9 +74,10 @@ Using a CDN like unpkg.com:
 - `basePath`:
   - type: `string`
   - attribute: `base-path`
-  - default: `ace/` folder relative to import path.
+  - default: `ace/` folder relative to module import path.
   - description: Specifies the location to load additional ACE resources.
 
 ## Supported events
 
-- `change`: triggered when the editor's value changes.
+- `change`: Triggered when the editor's value changes.
+- `ready`: Triggered after the ace editor has been initialized.
