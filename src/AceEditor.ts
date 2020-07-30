@@ -177,9 +177,7 @@ class AceEditor extends HTMLElement {
         this.removeAttribute('value');
       }
 
-      this.dispatch('change', {
-        detail: text,
-      });
+      this.dispatch('change', text);
     }
   });
 }
