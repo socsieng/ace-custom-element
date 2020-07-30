@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.2.1](https://www.github.com/socsieng/ace-custom-element/compare/v1.2.0...v1.2.1) (2020-07-30)
+
+
+### Bug Fixes
+
+* fire ready event after editor is initialized ([6b5480b](https://www.github.com/socsieng/ace-custom-element/commit/6b5480bd84dae139bc22fe67b32d038309ac0def))
+
 ## [1.2.0](https://www.github.com/socsieng/ace-custom-element/compare/v1.1.0...v1.2.0) (2020-07-30)
 
 
