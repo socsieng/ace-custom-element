@@ -17,6 +17,23 @@ export default [
         format: 'es',
         plugins: [terser()],
       },
+      {
+        file: 'dist/index.umd.js',
+        format: 'umd',
+        name: 'AceEditor',
+        globals: {
+          'ace-builds': 'Ace',
+        },
+      },
+      {
+        file: 'dist/index.umd.min.js',
+        format: 'umd',
+        name: 'AceEditor',
+        globals: {
+          'ace-builds': 'Ace',
+        },
+        plugins: [terser()],
+      },
     ],
     external: ['ace-builds'],
     plugins: [
