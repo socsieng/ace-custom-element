@@ -3,6 +3,7 @@ import 'ace-builds/src-noconflict/ace';
 import { NotifyAttribute, NotifyBooleanAttribute, NotifyNumericAttribute } from './lib/property-decorators';
 import { Ace } from 'ace-builds';
 import { debounce } from './lib/debounce';
+import { version } from '../package.json';
 
 /**
  * Custom element Ace code editor
@@ -13,6 +14,10 @@ class AceEditor extends HTMLElement {
   private _editor?: Ace.Editor;
   get editor(): Ace.Editor | undefined {
     return this._editor;
+  }
+
+  get version(): string {
+    return version;
   }
 
   @NotifyAttribute()
