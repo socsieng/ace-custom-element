@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.0.2](https://www.github.com/socsieng/ace-custom-element/compare/v1.0.1...v1.0.2) (2020-07-30)
+
+
+### Bug Fixes
+
+* update basePath to be an attribute ([f451b17](https://www.github.com/socsieng/ace-custom-element/commit/f451b175749beb6443c4cbf74694547d1e7f6936))
+
 ### [1.0.1](https://www.github.com/socsieng/ace-custom-element/compare/v1.0.0...v1.0.1) (2020-07-30)
 
 
