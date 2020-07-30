@@ -1,7 +1,7 @@
 {
   "name": "ace-custom-element",
-  "version": "0.0.3",
-  "description": "Custom element wrapper for ace editor (https://ace.c9.io/)",
+  "version": "0.0.4",
+  "description": "Custom element wrapper for the ace editor (https://ace.c9.io/)",
   "main": "dist/index.js",
   "scripts": {
     "lint": "eslint .",
@@ -10,6 +10,9 @@
     "build": "npm run lint && npm run pretty:check && rimraf dist && rollup -c",
     "prepublishOnly": "npm run test && npm run build",
     "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "repository": {
+    "url": "https://github.com/socsieng/ace-custom-element"
   },
   "keywords": [
     "ace",
