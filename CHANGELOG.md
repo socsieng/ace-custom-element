@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://www.github.com/socsieng/ace-custom-element/compare/v1.0.2...v1.1.0) (2020-07-30)
+
+
+### Features
+
+* expose the ace editor as a property ([a53346f](https://www.github.com/socsieng/ace-custom-element/commit/a53346ff3e07d10851d5e93ae0ec47cd59ffd12d))
+
 ### [1.0.2](https://www.github.com/socsieng/ace-custom-element/compare/v1.0.1...v1.0.2) (2020-07-30)
 
 
