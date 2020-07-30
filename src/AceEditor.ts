@@ -1,6 +1,6 @@
 import 'ace-builds/src-noconflict/ace';
 
-import { Notify, NotifyAttribute, NotifyBooleanAttribute, NotifyNumericAttribute } from './lib/property-decorators';
+import { NotifyAttribute, NotifyBooleanAttribute, NotifyNumericAttribute } from './lib/property-decorators';
 import { Ace } from 'ace-builds';
 import { debounce } from './lib/debounce';
 
@@ -36,7 +36,7 @@ class AceEditor extends HTMLElement {
   @NotifyBooleanAttribute()
   hideGutter?: boolean;
 
-  @Notify()
+  @NotifyAttribute()
   basePath?: string;
 
   static get observedAttributes(): string[] {
