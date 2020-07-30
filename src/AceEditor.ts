@@ -75,7 +75,7 @@ class AceEditor extends HTMLElement {
     const basePath = this.basePath || import.meta.url.replace(/[^\/]+$/, 'ace/');
     ace.config.set('basePath', basePath);
 
-    const editor = ace.edit(this);
+    const editor = this._editor || ace.edit(this);
 
     this.appendStyles();
 
@@ -100,6 +100,8 @@ class AceEditor extends HTMLElement {
 
     editor.off('change', this.handleChange);
     editor.on('change', this.handleChange);
+    editor.off('blur', this.handleBlur);
+    editor.on('blur', this.handleBlur);
 
     this.resize();
 
@@ -157,6 +159,7 @@ class AceEditor extends HTMLElement {
     if (!this._editor) return;
 
     this._editor.off('change', this.handleChange);
+    this._editor.off('blur', this.handleBlur);
   }
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -185,6 +188,10 @@ class AceEditor extends HTMLElement {
       this.dispatch('change', text);
     }
   });
+
+  private handleBlur = () => {
+    this.dispatchEvent(new FocusEvent('blur'));
+  };
 }
 
 interface AceEditor {

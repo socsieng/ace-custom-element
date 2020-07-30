@@ -79,5 +79,6 @@ Using a CDN like unpkg.com:
 
 ## Supported events
 
-- `change`: Triggered when the editor's value changes.
+- `change`: Triggered when the editor's value changes (will trigger for each keystroke).
 - `ready`: Triggered after the ace editor has been initialized.
+- `blur`: Triggered when the editor loses focus.
