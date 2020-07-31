@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.2.2](https://www.github.com/socsieng/ace-custom-element/compare/v1.2.1...v1.2.2) (2020-07-31)
+
+
+### Features
+
+* version bump to 1.2.2 ([0953227](https://www.github.com/socsieng/ace-custom-element/commit/09532278e4305970b99b92de01bfd8ea4c8bca25))
+
 ### [1.2.1](https://www.github.com/socsieng/ace-custom-element/compare/v1.2.0...v1.2.1) (2020-07-30)
 
 
