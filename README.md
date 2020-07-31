@@ -40,7 +40,7 @@ npm install ace-custom-element
 | :----------- | :------------ | :----------- | :-------------------------------------------- | :------------------------------------------------------- |
 | `editor`     | -             | `Ace.Editor` | -                                             | A reference to the ace editor.                           |
 | `value`      | `value`       | `string`     | `""`                                          | Editor text value.                                       |
-| `mode`       | `mode`        | `string`     | `ace/mode/javascript`                         | Editor more.                                             |
+| `mode`       | `mode`        | `string`     | `ace/mode/javascript`                         | Editor mode.                                             |
 | `theme`      | `theme`       | `string`     | `ace/theme/eclipse`                           | Editor theme.                                            |
 | `tabSize`    | `tab-size`    | `number`     | `2`                                           | Editor tab size.                                         |
 | `readonly`   | `readonly`    | `boolean`    | `false`                                       | Places editor in readonly mode.                          |
