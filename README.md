@@ -2,21 +2,12 @@
 
 This is a custom element wrapper for the [Ace code editor](https://ace.c9.io/).
 
-## Installation
-
-```
-npm install ace-custom-element
-```
+The primary reason for this package over other similar packages is to make it easier to use with by including a single
+script resource so that it can be accessed using services like unpkg.com.
 
 ## Usage
 
-Using a local file:
-
-```html
-<script type="module" src="./node_modules/ace-custom-element/dist/index.min.js"></script>
-
-<ace-editor theme="ace/theme/monokai" value="console.log('hello world');"></ace-editor>
-```
+### CDN
 
 Using a CDN like unpkg.com:
 
@@ -29,10 +20,24 @@ Using a CDN like unpkg.com:
 
 Try it out on [JSFiddle](https://jsfiddle.net/4ejdon81/).
 
+### Locally
+
+Using a local file:
+
+```
+npm install ace-custom-element
+```
+
+```html
+<script type="module" src="./node_modules/ace-custom-element/dist/index.min.js"></script>
+
+<ace-editor theme="ace/theme/monokai" value="console.log('hello world');"></ace-editor>
+```
+
 ## Supported properties
 
 | Property     | Attribute     | Type         | Default value                                 | Description                                              |
-| ------------ | ------------- | ------------ | --------------------------------------------- | -------------------------------------------------------- |
+| :----------- | :------------ | :----------- | :-------------------------------------------- | :------------------------------------------------------- |
 | `editor`     | -             | `Ace.Editor` | -                                             | A reference to the ace editor.                           |
 | `value`      | `value`       | `string`     | `""`                                          | Editor text value.                                       |
 | `mode`       | `mode`        | `string`     | `ace/mode/javascript`                         | Editor more.                                             |
