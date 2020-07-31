@@ -31,56 +31,23 @@ Try it out on [JSFiddle](https://jsfiddle.net/4ejdon81/).
 
 ## Supported properties
 
-- `editor`:
-  - type: `Ace.Editor`
-  - description: A reference to the ace editor.
-- `value`:
-  - type: `string`
-  - attribute: `value`
-  - description: Editor text value.
-- `mode`:
-  - type: `string`
-  - attribute: `mode`
-  - default: `ace/mode/javascript`
-  - description: Editor more.
-- `theme`:
-  - type: `string`
-  - attribute: `theme`
-  - default: `ace/theme/eclipse`
-  - description: Editor theme.
-- `tabSize`:
-  - type: `number`
-  - attribute: `tab-size`
-  - default: `2`
-  - description: Editor tab size.
-- `readonly`:
-  - type: `boolean`
-  - attribute: `readonly`
-  - default: `false`
-  - description: Places editor in readonly mode.
-- `softTabs`:
-  - type: `boolean`
-  - attribute: `soft-tabs`
-  - default: `false`
-  - description: Sets editor to use soft tabs.
-- `wrap`:
-  - type: `boolean`
-  - attribute: `wrap`
-  - default: `false`
-  - description: Sets editor to wrap text.
-- `hideGutter`:
-  - type: `boolean`
-  - attribute: `hide-gutter`
-  - default: `false`
-  - description: Hides the editor gutter.
-- `basePath`:
-  - type: `string`
-  - attribute: `base-path`
-  - default: `ace/` folder relative to module import path.
-  - description: Specifies the location to load additional ACE resources.
+| Property     | Attribute     | Type         | Default value                                 | Description                                              |
+| ------------ | ------------- | ------------ | --------------------------------------------- | -------------------------------------------------------- |
+| `editor`     | -             | `Ace.Editor` | -                                             | A reference to the ace editor.                           |
+| `value`      | `value`       | `string`     | `""`                                          | Editor text value.                                       |
+| `mode`       | `mode`        | `string`     | `ace/mode/javascript`                         | Editor more.                                             |
+| `theme`      | `theme`       | `string`     | `ace/theme/eclipse`                           | Editor theme.                                            |
+| `tabSize`    | `tab-size`    | `number`     | `2`                                           | Editor tab size.                                         |
+| `readonly`   | `readonly`    | `boolean`    | `false`                                       | Places editor in readonly mode.                          |
+| `softTabs`   | `soft-tabs`   | `boolean`    | `false`                                       | Sets editor to use soft tabs.                            |
+| `wrap`       | `wrap`        | `boolean`    | `false`                                       | Sets editor to wrap text.                                |
+| `hideGutter` | `hide-gutter` | `boolean`    | `false`                                       | Hides the editor gutter.                                 |
+| `basePath`   | `base-path`   | `string`     | `ace/` folder relative to module import path. | Specifies the location to load additional ACE resources. |
 
 ## Supported events
 
-- `change`: Triggered when the editor's value changes (will trigger for each keystroke).
-- `ready`: Triggered after the ace editor has been initialized.
-- `blur`: Triggered when the editor loses focus.
+| Event    | Description                                                                  |
+| -------- | ---------------------------------------------------------------------------- |
+| `change` | Triggered when the editor's value changes (will trigger for each keystroke). |
+| `ready`  | Triggered after the ace editor has been initialized.                         |
+| `blur`   | Triggered when the editor loses focus.                                       |
