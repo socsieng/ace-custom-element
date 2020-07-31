@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.3.0](https://www.github.com/socsieng/ace-custom-element/compare/v1.2.2...v1.3.0) (2020-07-31)
+
+
+### Features
+
+* update version property to include ace-builds version ([e261c72](https://www.github.com/socsieng/ace-custom-element/commit/e261c7299680142eda30e4a8568e78f8ab1085b9))
+
+
+### Bug Fixes
+
+* move ace-builds to a dev dependency ([4a586b7](https://www.github.com/socsieng/ace-custom-element/commit/4a586b7083ec4a2095936ac31cb9a4b4e34d8439))
+
 ### [1.2.2](https://www.github.com/socsieng/ace-custom-element/compare/v1.2.1...v1.2.2) (2020-07-31)
 
 
