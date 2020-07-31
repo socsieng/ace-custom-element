@@ -1,9 +1,10 @@
 import 'ace-builds/src-noconflict/ace';
 
 import { NotifyAttribute, NotifyBooleanAttribute, NotifyNumericAttribute } from './lib/property-decorators';
+import { name as aceName, version as aceVersion } from 'ace-builds/package.json';
+import { name as editorName, version as editorVersion } from '../package.json';
 import { Ace } from 'ace-builds';
 import { debounce } from './lib/debounce';
-import { version } from '../package.json';
 
 /**
  * Custom element Ace code editor
@@ -16,8 +17,11 @@ class AceEditor extends HTMLElement {
     return this._editor;
   }
 
-  get version(): string {
-    return version;
+  get version(): { [key: string]: string } {
+    return {
+      [editorName]: editorVersion,
+      [aceName]: aceVersion,
+    };
   }
 
   @NotifyAttribute()
