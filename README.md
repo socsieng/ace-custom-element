@@ -1,5 +1,7 @@
 # Ace Custom Element
 
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/ace-custom-element)
+
 This is a custom element wrapper for the [Ace code editor](https://ace.c9.io/).
 
 The primary reason for this package over other similar packages is to make it easier to use with by including a single
@@ -10,6 +12,21 @@ script resource so that it can be accessed using services like unpkg.com.
 ### CDN
 
 Using a CDN like unpkg.com:
+
+<!--
+```
+<custom-element-demo>
+  <template>
+    <style>
+      ace-editor.editor {
+        height: 300px;
+      }
+    </style>
+    <next-code-block></next-code-block>
+  </template>
+</custom-element-demo>
+```
+-->
 
 ```html
 <!-- pin to a specific version if required -->
