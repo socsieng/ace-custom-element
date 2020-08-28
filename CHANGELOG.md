@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.3.1](https://www.github.com/socsieng/ace-custom-element/compare/v1.3.0...v1.3.1) (2020-08-28)
+
+
+### Bug Fixes
+
+* **docs:** add webcomponents.org badge ([249539c](https://www.github.com/socsieng/ace-custom-element/commit/249539c35fb19aa2f7dbf640338781b67e5adb66))
+
 ## [1.3.0](https://www.github.com/socsieng/ace-custom-element/compare/v1.2.2...v1.3.0) (2020-07-31)
 
 
