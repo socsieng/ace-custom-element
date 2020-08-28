@@ -1,5 +1,6 @@
 # Ace Custom Element
 
+[![npm version](https://badge.fury.io/js/ace-custom-element.svg)](https://www.npmjs.com/package/ace-custom-element)
 [![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/ace-custom-element)
 
 This is a custom element wrapper for the [Ace code editor](https://ace.c9.io/).
