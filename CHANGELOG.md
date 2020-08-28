@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.3.2](https://www.github.com/socsieng/ace-custom-element/compare/v1.3.1...v1.3.2) (2020-08-28)
+
+
+### Bug Fixes
+
+* **docs:** update css style for webcomponent preview ([ac4723d](https://www.github.com/socsieng/ace-custom-element/commit/ac4723dda162f90405f8c8fc17586aa7e0605f52))
+
 ### [1.3.1](https://www.github.com/socsieng/ace-custom-element/compare/v1.3.0...v1.3.1) (2020-08-28)
 
 
