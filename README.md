@@ -19,7 +19,7 @@ Using a CDN like unpkg.com:
 <custom-element-demo>
   <template>
     <style>
-      ace-editor.editor {
+      ace-editor {
         height: 300px;
       }
     </style>
