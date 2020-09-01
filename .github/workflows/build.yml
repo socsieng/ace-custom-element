@@ -30,8 +30,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: GoogleCloudPlatform/release-please-action@v1.5.0
+      - id: release
+        uses: GoogleCloudPlatform/release-please-action@v1.5.0
         with:
           token: ${{secrets.GITHUB_TOKEN}}
           release-type: node
           package-name: ace-custom-element
+
+        # push to npm if release-please created a release
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+          registry-url: https://registry.npmjs.org/
+        if: ${{ steps.release.outputs.release_created }}
+      - run: npm install
+        if: ${{ steps.release.outputs.release_created }}
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+        if: ${{ steps.release.outputs.release_created }}
