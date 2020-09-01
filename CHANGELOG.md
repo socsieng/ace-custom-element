@@ -1,5 +1,14 @@
 # Changelog
 
+### [1.3.3](https://www.github.com/socsieng/ace-custom-element/compare/v1.3.2...v1.3.3) (2020-09-01)
+
+
+### Bug Fixes
+
+* **build:** apply formatting to build.yml ([ffdd863](https://www.github.com/socsieng/ace-custom-element/commit/ffdd863d4d5af279228e20089d2f35502e4dc290))
+* **build:** automatically publish to npm when a release is created by release-please ([6c010e5](https://www.github.com/socsieng/ace-custom-element/commit/6c010e536dff98ea10a6492616ad880a3c015ff3))
+* **deps:** fix broken build by updating npm packages ([91f81ce](https://www.github.com/socsieng/ace-custom-element/commit/91f81ce9d435744a3462d1680a0b28e7898a3170))
+
 ### [1.3.2](https://www.github.com/socsieng/ace-custom-element/compare/v1.3.1...v1.3.2) (2020-08-28)
 
 
