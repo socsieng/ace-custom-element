@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.3.4](https://www.github.com/socsieng/ace-custom-element/compare/v1.3.3...v1.3.4) (2020-09-01)
+
+
+### Bug Fixes
+
+* **build:** add checkout step to release-please release workflow ([938cba2](https://www.github.com/socsieng/ace-custom-element/commit/938cba22474a5803a3f6f0c9c1ec946928057b50))
+
 ### [1.3.3](https://www.github.com/socsieng/ace-custom-element/compare/v1.3.2...v1.3.3) (2020-09-01)
 
 
