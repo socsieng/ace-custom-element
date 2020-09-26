@@ -54,21 +54,22 @@ npm install ace-custom-element
 
 ## Supported properties
 
-| Property                  | Attribute                    | Type         | Default value                                 | Description                                              |
-| :------------------------ | :--------------------------- | :----------- | :-------------------------------------------- | :------------------------------------------------------- |
-| `editor`                  | -                            | `Ace.Editor` | -                                             | A reference to the ace editor.                           |
-| `value`                   | `value`                      | `string`     | `""`                                          | Editor text value.                                       |
-| `mode`                    | `mode`                       | `string`     | `ace/mode/javascript`                         | Editor mode.                                             |
-| `theme`                   | `theme`                      | `string`     | `ace/theme/eclipse`                           | Editor theme.                                            |
-| `tabSize`                 | `tab-size`                   | `number`     | `2`                                           | Editor tab size.                                         |
-| `readonly`                | `readonly`                   | `boolean`    | `false`                                       | Places editor in readonly mode.                          |
-| `softTabs`                | `soft-tabs`                  | `boolean`    | `false`                                       | Sets editor to use soft tabs.                            |
-| `wrap`                    | `wrap`                       | `boolean`    | `false`                                       | Sets editor to wrap text.                                |
-| `hideActiveLineHighlight` | `hide-active-line-highlight` | `boolean`    | `false`                                       | Hides highlight for the current line.                    |
-| `hideGutter`              | `hide-gutter`                | `boolean`    | `false`                                       | Hides the editor gutter.                                 |
-| `hideGutterLineHighlight` | `hide-gutter-line-highlight` | `boolean`    | `false`                                       | Hides gutter highlight for the current line.             |
-| `hidePrintMargin`         | `hide-print-margin`          | `boolean`    | `false`                                       | Hides the print margin (vertical ruler).                 |
-| `basePath`                | `base-path`                  | `string`     | `ace/` folder relative to module import path. | Specifies the location to load additional ACE resources. |
+| Property                  | Attribute                    | Type                              | Default value                                 | Description                                                        |
+| :------------------------ | :--------------------------- | :-------------------------------- | :-------------------------------------------- | :----------------------------------------------------------------- |
+| `editor`                  | -                            | `Ace.Editor`                      | -                                             | A reference to the ace editor.                                     |
+| `value`                   | `value`                      | `string`                          | `""`                                          | Editor text value.                                                 |
+| `mode`                    | `mode`                       | `string`                          | `ace/mode/javascript`                         | Editor mode.                                                       |
+| `theme`                   | `theme`                      | `string`                          | `ace/theme/eclipse`                           | Editor theme.                                                      |
+| `tabSize`                 | `tab-size`                   | `number`                          | `2`                                           | Editor tab size.                                                   |
+| `readonly`                | `readonly`                   | `boolean`                         | `false`                                       | Places editor in readonly mode.                                    |
+| `softTabs`                | `soft-tabs`                  | `boolean`                         | `false`                                       | Sets editor to use soft tabs.                                      |
+| `wrap`                    | `wrap`                       | `boolean`                         | `false`                                       | Sets editor to wrap text.                                          |
+| `wrap`                    | `wrap`                       | `boolean`                         | `false`                                       | Sets editor to wrap text.                                          |
+| `valueUpdateMode`         | `value-update-mode`          | `"start"`, `"end"`, or `"select"` | `"select"`                                    | Specifies the selection behavior after the value has been updated. |
+| `hideGutter`              | `hide-gutter`                | `boolean`                         | `false`                                       | Hides the editor gutter.                                           |
+| `hideGutterLineHighlight` | `hide-gutter-line-highlight` | `boolean`                         | `false`                                       | Hides gutter highlight for the current line.                       |
+| `hidePrintMargin`         | `hide-print-margin`          | `boolean`                         | `false`                                       | Hides the print margin (vertical ruler).                           |
+| `basePath`                | `base-path`                  | `string`                          | `ace/` folder relative to module import path. | Specifies the location to load additional ACE resources.           |
 
 ## Supported events
 

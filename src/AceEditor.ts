@@ -6,6 +6,18 @@ import { name as editorName, version as editorVersion } from '../package.json';
 import { Ace } from 'ace-builds';
 import { debounce } from './lib/debounce';
 
+enum ValueUpdateMode {
+  start = 'start',
+  end = 'end',
+  select = 'select',
+}
+
+function getValueUpdateNumber(mode?: ValueUpdateMode): number {
+  if (mode === ValueUpdateMode.start) return -1;
+  if (mode === ValueUpdateMode.end) return 1;
+  return 0;
+}
+
 /**
  * Custom element Ace code editor
  */
@@ -44,6 +56,9 @@ class AceEditor extends HTMLElement {
 
   @NotifyBooleanAttribute()
   wrap?: boolean;
+
+  @NotifyAttribute()
+  valueUpdateMode?: ValueUpdateMode;
 
   @NotifyBooleanAttribute()
   hideActiveLineHighlight?: boolean;
@@ -97,7 +112,7 @@ class AceEditor extends HTMLElement {
 
     const text = editor.getValue() || '';
     if (text !== this.value) {
-      editor.setValue(this.value || '');
+      editor.setValue(this.value || '', getValueUpdateNumber(this.valueUpdateMode));
     }
 
     editor.getSession().setTabSize(this.tabSize || 2);
