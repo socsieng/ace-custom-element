@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.4.0](https://www.github.com/socsieng/ace-custom-element/compare/v1.3.4...v1.4.0) (2020-09-26)
+
+
+### Features
+
+* expose property to control the line highlights ([ccba651](https://www.github.com/socsieng/ace-custom-element/commit/ccba6517417698a3c36456f45a6402d59543d848))
+* expose property to hide the print margin ([fa18dcb](https://www.github.com/socsieng/ace-custom-element/commit/fa18dcb227c79660a582645f3591a040f2f8f366))
+
+
+### Bug Fixes
+
+* only hide active line and gutter line if control is readonly ([76257a5](https://www.github.com/socsieng/ace-custom-element/commit/76257a503f0d1a82420ac53a0b64714d869741cd))
+
 ### [1.3.4](https://www.github.com/socsieng/ace-custom-element/compare/v1.3.3...v1.3.4) (2020-09-01)
 
 
