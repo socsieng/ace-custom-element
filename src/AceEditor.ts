@@ -97,12 +97,14 @@ class AceEditor extends HTMLElement {
     editor.getSession().setTabSize(this.tabSize || 2);
     editor.getSession().setUseSoftTabs(!!this.softTabs);
 
-    editor.setReadOnly(!!this.readonly);
-    editor.setHighlightActiveLine(!this.readonly);
-    editor.setHighlightGutterLine(!this.readonly);
-
     editor.renderer.setShowGutter(!this.hideGutter);
     editor.renderer.setShowPrintMargin(!this.hidePrintMargin);
+
+    editor.setReadOnly(!!this.readonly);
+    if (this.readonly) {
+      editor.setHighlightActiveLine(!this.readonly);
+      editor.setHighlightGutterLine(!this.readonly);
+    }
 
     editor.getSession().setUseWrapMode(!!this.wrap);
 
