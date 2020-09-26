@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://www.github.com/socsieng/ace-custom-element/compare/v1.4.0...v1.5.0) (2020-09-26)
+
+
+### Features
+
+* add property to specify the selection behavior when the value is updated ([02b8e7a](https://www.github.com/socsieng/ace-custom-element/commit/02b8e7a70cab13391b6fef0f4cb875e161be4a0a))
+
 ## [1.4.0](https://www.github.com/socsieng/ace-custom-element/compare/v1.3.4...v1.4.0) (2020-09-26)
 
 
