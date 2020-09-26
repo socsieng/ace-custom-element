@@ -64,7 +64,7 @@ jobs:
       - name: publish to bit.dev
         run: |
           bit init
-          bit add --id ace-custom-element dist/index.min.js
+          bit add --id ace-custom-element dist/*
           bit tag --all `node scripts/version.js`
           bit export socsieng.ace-custom-element
         if: ${{ steps.release.outputs.release_created }}
