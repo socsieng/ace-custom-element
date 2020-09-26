@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.6.2](https://www.github.com/socsieng/ace-custom-element/compare/v1.6.1...v1.6.2) (2020-09-26)
+
+
+### Bug Fixes
+
+* **build:** fix bit.dev configuration to use typescript compiler ([45a1677](https://www.github.com/socsieng/ace-custom-element/commit/45a16779e0e3cd41384975c44558ad5d791e182a))
+
 ### [1.6.1](https://www.github.com/socsieng/ace-custom-element/compare/v1.6.0...v1.6.1) (2020-09-26)
 
 
