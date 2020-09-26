@@ -46,7 +46,13 @@ class AceEditor extends HTMLElement {
   wrap?: boolean;
 
   @NotifyBooleanAttribute()
+  hideActiveLineHighlight?: boolean;
+
+  @NotifyBooleanAttribute()
   hideGutter?: boolean;
+
+  @NotifyBooleanAttribute()
+  hideGutterLineHighlight?: boolean;
 
   @NotifyBooleanAttribute()
   hidePrintMargin?: boolean;
@@ -99,6 +105,8 @@ class AceEditor extends HTMLElement {
 
     editor.renderer.setShowGutter(!this.hideGutter);
     editor.renderer.setShowPrintMargin(!this.hidePrintMargin);
+    editor.setHighlightActiveLine(!this.hideActiveLineHighlight);
+    editor.setHighlightGutterLine(!this.hideGutterLineHighlight);
 
     editor.setReadOnly(!!this.readonly);
     if (this.readonly) {
