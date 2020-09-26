@@ -51,3 +51,20 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
         if: ${{ steps.release.outputs.release_created }}
+
+      # push to bit.dev if release-please created a release
+      - run: npm install --global bit-bin
+        if: ${{ steps.release.outputs.release_created }}
+      - name: bit.dev configuration
+        run: |
+          bit config set analytics_reporting false
+          bit config set anonymous_reporting false
+          bit config set user.token ${{secrets.BIT_TOKEN}}
+        if: ${{ steps.release.outputs.release_created }}
+      - name: publish to bit.dev
+        run: |
+          bit init
+          bit add --id ace-custom-element dist/index.min.js
+          bit tag --all `node scripts/version.js`
+          bit export socsieng.ace-custom-element
+        if: ${{ steps.release.outputs.release_created }}
