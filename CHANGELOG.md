@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.6.1](https://www.github.com/socsieng/ace-custom-element/compare/v1.6.0...v1.6.1) (2020-09-26)
+
+
+### Bug Fixes
+
+* **build:** bit.dev configuration to include dist folder ([401bbeb](https://www.github.com/socsieng/ace-custom-element/commit/401bbeb728f9144ff297613b0edda190d23f92a0))
+
 ## [1.6.0](https://www.github.com/socsieng/ace-custom-element/compare/v1.5.0...v1.6.0) (2020-09-26)
 
 
