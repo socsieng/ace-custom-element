@@ -41,6 +41,7 @@ jobs:
       - name: publish to bit.dev
         run: |
           bit init
-          bit add --id ace-custom-element dist/*
+          bit import bit.envs/compilers/typescript --compiler
+          bit add --id ace-custom-element src/AceEditor.ts
           bit tag --all `node scripts/version.js`
           bit export socsieng.ace-custom-element
