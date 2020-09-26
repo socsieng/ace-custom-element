@@ -42,6 +42,6 @@ jobs:
         run: |
           bit init
           bit import bit.envs/compilers/typescript --compiler
-          bit add --id ace-custom-element src/AceEditor.ts src/* package.json
+          bit add --id ace-custom-element -m src/AceEditor.ts src/* package.json
           bit tag --all `node scripts/version.js`
           bit export socsieng.ace-custom-element
