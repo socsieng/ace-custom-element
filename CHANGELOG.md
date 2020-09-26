@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.6.0](https://www.github.com/socsieng/ace-custom-element/compare/v1.5.0...v1.6.0) (2020-09-26)
+
+
+### Features
+
+* publish to bit.dev ([fa57225](https://www.github.com/socsieng/ace-custom-element/commit/fa572259c9ad126970de2b4edbf1da3b09aabd81))
+
+
+### Bug Fixes
+
+* update pipeline to publish to bit.dev when release is created ([36fa605](https://www.github.com/socsieng/ace-custom-element/commit/36fa605a637c9471d6728dd4f20a997fcc21d48f))
+
 ## [1.5.0](https://www.github.com/socsieng/ace-custom-element/compare/v1.4.0...v1.5.0) (2020-09-26)
 
 
