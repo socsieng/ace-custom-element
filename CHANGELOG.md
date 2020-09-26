@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.6.4](https://www.github.com/socsieng/ace-custom-element/compare/v1.6.3...v1.6.4) (2020-09-26)
+
+
+### Bug Fixes
+
+* **build:** fix bit.dev to include main file ([2c47888](https://www.github.com/socsieng/ace-custom-element/commit/2c47888f39e26191dc65ab360aebb8e715914b49))
+
 ### [1.6.3](https://www.github.com/socsieng/ace-custom-element/compare/v1.6.2...v1.6.3) (2020-09-26)
 
 
